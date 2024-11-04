@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wind Farm Map</title>
+    <link href="https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.css" rel="stylesheet" />
+    <style>
+        #map { width: 100%; height: 100vh; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.js"></script>
+    <script src="app.js"></script> 
+</body>
+</html>
+
+<div id="controls">
+    <h3>Wind Farm Operational Timeline</h3> 
+    <input type="range" min="2000" max="2023" value="2000" id="yearSlider" step="1">
+    <label id="yearLabel">Year: 2000</label>
+</div>
+
+<style>
+    #controls {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: white;
+        padding: 10px;
+        border-radius: 4px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        font-family: Arial, sans-serif;
+    }
+
+    
+    #controls h3 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+    }
+</style>
